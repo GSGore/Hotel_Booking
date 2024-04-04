@@ -51,7 +51,7 @@ function App() {
         </Elements>}/>
         <Route id="mybookings" path="user/booking" element={<MyBookings />}/>
         <Route id="bookingdetails" path="user/booking/:bookingId" element={<BookingDetails />}/>
-        <Route id="accomodation"  path="accomodation"  element={<Accomodation />}/>
+        <Route id="accomodation"  path="accommodation"  element={<Accomodation />}/>
         <Route id="accomodationform"  path="accomodationform"  element={<AccomodationForm />}/>
       </Route>
       
@@ -71,3 +71,4 @@ function App() {
 }
 
 export default App;
+//G
