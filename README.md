@@ -1,72 +1,92 @@
-# Getting Started with Create React App
+# HomelyHub - Hotel Booking Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HomelyHub is a full-stack web application for booking accommodations, managing hotel listings, and utilizing map features to find nearby hotels.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **Frontend**: React.js, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (MongoDB Atlas for cloud deployment)
+- **Map Feature**: Integration with Google Maps API
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication**: Secure signup and login functionality.
+- **Hotel Booking**: Search and book accommodations based on location, dates, and preferences.
+- **Hotel Management**: Allow hotel owners to add, update, and manage their hotel listings.
+- **Map Integration**: Display hotels on Google Maps with interactive features.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js installed on your machine.
+- MongoDB Atlas account for cloud database (or local MongoDB server setup).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/homelyhub.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd homelyhub
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setting Up MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create a MongoDB Atlas cluster and obtain your connection string.
+- Configure the connection string in your backend server (usually in a `.env` file).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Running the Application
 
-### `npm run eject`
+### Backend (Node.js + Express)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
+2. Start the backend server:
+   ```
+   npm start
+   ```
+   The server runs on http://localhost:5000 by default.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend (React)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Navigate to the frontend directory:
+   ```
+   cd frontend
+   ```
+2. Start the frontend development server:
+   ```
+   npm start
+   ```
+   The frontend runs on http://localhost:3000 by default.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testing
 
-## Learn More
+- Backend testing: Use tools like Postman for API testing.
+- Frontend testing: Run tests using `npm test` in the frontend directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Backend**: Deploy your Node.js + Express server to a cloud platform like Heroku.
+2. **Frontend**: Deploy your React app to a static hosting service like Netlify or Vercel.
 
-### Code Splitting
+## Additional Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Learn more about [MongoDB](https://www.mongodb.com/) and [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- Explore [React documentation](https://reactjs.org/docs/getting-started.html) for frontend development.
+- Understand [Express.js](https://expressjs.com/) for backend API development.
 
-### Analyzing the Bundle Size
+## Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- If you encounter issues with building or running the application, refer to [Create React App troubleshooting](https://create-react-app.dev/docs/troubleshooting/) or respective technology documentation.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-###Main branch is of frontend and second file is backend
+Adjust the sections and details based on your specific implementation and project structure. This README provides a clear guide for users and developers interested in understanding and contributing to the "HomelyHub" hotel booking website project.
